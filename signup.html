@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="signup.css">
+    <title>SignUp Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="img/learning" alt="learning" srcset="" style="max-width: 85%;">
+            </div>
+    
+            <div class="header__text">
+                <h3>Student Registration Form</h3>
+                <p>Fill out the form to apply for the training courses. You can consider your application accepted after you receive a confirmation email</p>
+            </div>
+        </header>
+
+
+        <div class="heading">
+            <div class="address">
+                <h6>
+                    Student Information
+                </h6>
+            </div>
+        </div>
+    
+        <form action="preview.html" name="Signup" id="Signup"  method="post">
+    
+            <input type="text" name="First Name" id="fName" placeholder="First Name" required >
+            <input type="text" name="Middle name" id="mName" placeholder="Middle Name" required >
+            <input type="text" name="Last Name" id="lName" placeholder="Last Name" required>
+            <input type="date" name="Date Of Birth" id="dob" placeholder="Date of Birth" required   class="column__date">
+            <input type="text" name="Student ID" id="sid" placeholder="Student ID" required  class="column">
+
+
+            <div class="heading">
+                <h6 class="address">
+                    Address
+                </h6>
+            </div>
+        
+            <input type="text" name="Street address" id="address" placeholder="Street address" required  class="address">
+            <input type="text" name="City" id="city" placeholder="City" required class="column">
+            <input type="text" name="State / Province" id="state" placeholder="State / Province" required class="column">
+            <input type="text" name="Country" id="country" placeholder="Country" required class="column" >
+            <input type="text" name="ZIP Code" id="zip" placeholder="ZIP Code" required class="column" >
+
+            <div class="heading">
+                <h6 class="address">
+                    Contact Information
+                </h6>
+            </div>
+                        
+            <input type="email" name="E-mail" id="mail" placeholder="E-mail" required class="column-1" >
+            <input type="email" name="E-mail" id="mail" placeholder="" required class="column">
+                    
+            <div class="heading">
+                <h6 class="address">
+                    Courses <span>*</span>
+                </h6>
+            </div>
+        
+            <div class="box">
+                <select name="Course" id="course">
+                    <option value="Course">Course</option>
+                    <option value="Front-End web development">Frontend web-development</option>
+                    <option value="Back-End web development">Backend web-development</option>
+                </select> 
+
+                <select name="Level" id="level" required>
+                <option value="Level">Level</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate" >Intermediate</option>
+                <option value="Professional">Professional</option>
+                </select> 
+
+                <select name="Language" id="language" required>
+                    <option value="Language">Language</option>
+                    <option value="English" >English</option>
+                    <option value="Yoruba">Yoruba</option>
+                </select> 
+
+                <select name="Start Date" id="date" required >
+                    <option value="Start Date">Start Date</option>
+                    <option value="2022">2022</option>
+                    <option value="2023" >2023</option>
+                </select> 
+            </div>
+                    
+            <textarea name="Comments" id="comments" cols="30" rows="10" required>
+                comments
+            </textarea>
+
+            <input type="submit" value="SEND REQUEST" class="submit">
+            
+                    
+        </form>
+    </div>
+    
+</body>
+</html>
