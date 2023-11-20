@@ -4,60 +4,69 @@
     margin: 0;
 }
 html {
-    font-size: 1rem; /* Set your root font size here */
+    font-size: 1rem; 
 
     @media only screen and (max-width: 1200px) {
         font-size: .8rem;
-        height: 100vh;
     }
 }
 body,
 input,
 button{
     font-family: 'Poppins', sans-serif;
-    font-size: .9rem; /* Assume you want your body text to be 14px */
+    font-size: .9rem; 
     max-width: 100%;
     height: auto;
-    border: 10px solid brown;
-    padding: 1rem;
+    padding: 0;
     
-    @media only screen and (max-width: 1600px) {
-        border: 9px solid brown;
-    }
     @media only screen and (max-width: 1200px) {
        height: 100%;
     }  
 }
 .container {
     background-color: white;
-    padding-left: 0.438rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    border: 10px solid brown;
+
+    @media only screen and (max-width: 1600px) {
+        border: 9px solid brown;
+    }
 }
 .header__logo {
     float: left;
     height: auto;
     width: auto;
+    padding: 0;
 
     @media only screen and (max-width: 1600px) {
-        height: 100px;
-        width: 200px;
+        height: 6.25rem;
+        width: 12.5rem;
     }
 
     @media only screen and (max-width: 1200px) {
-        height: 100px;
-        width: 110px;
+        height: 6.25rem;
+        width: 6.8rem;
     }
-    @media only screen and (max-width: 700px) {
-        height: 100px;
-        width: 110px;
-    } 
+
+    @media only screen and (max-width: 900px) {
+        height: 5.3rem;
+        width: 6.5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        height: 4.3rem;
+        width: 5.6rem;
+    }
+        
 }
 .header__text {
    text-align: center;
 
    @media only screen and (max-width: 1200px) {
-   margin-left: 3rem;
-   margin-right: 3rem;
-   }
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 }
 h3 {
     color: black;
@@ -83,6 +92,24 @@ h3 {
         font-weight: 500;
         font-size: 2.8rem;
     }  
+
+    @media only screen and (max-width: 590px) {
+        font-weight: 50;
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 460px) {
+        font-size: 1.8rem;
+        padding-left: 0;
+    }
+
+    @media only screen and (max-width: 409px) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: 365px) {
+        font-size: 1.2rem;
+    }
 }
 p {
     color: grey;
@@ -95,7 +122,12 @@ p {
     @media only screen and (max-width: 1300px) {
         font-size: 1rem;
     }
+
+    @media only screen and (max-width: 500px) {
+        font-size: .7rem;
+    }
 }
+
 .heading{
     color: black;
     font-size: 30px;
@@ -130,13 +162,19 @@ span {
 }
 .box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width: 100%;
     border: 3px solid black;
     padding-top: .6rem;
     padding-bottom: .6rem;
     padding-left: .3rem;
     padding-right: 10rem;
     margin-bottom: .4rem;
+
+    @media only screen and (max-width: 700px) {
+        flex-direction: column;
+        padding: .2rem;
+    }
 }
 textarea {
     font-family: inherit;
