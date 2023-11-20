@@ -150,8 +150,8 @@ input {
     padding-left: 1rem;
     padding-right: 2rem;
     width: 100%;
-    padding-top: .3rem;
-    padding-bottom: .3rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
 }
 .address {
     padding-top: .6rem;
@@ -165,8 +165,8 @@ span {
     justify-content: space-around;
     max-width: 100%;
     border: 3px solid black;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
     padding-left: .3rem;
     padding-right: 10rem;
     margin-bottom: .4rem;
